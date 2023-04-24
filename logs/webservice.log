@@ -33,3 +33,9 @@
 2023-04-24 15:58:14.875 [https-jsse-nio-7500-exec-1] INFO  c.h.c.e.e.GlobalExceptionHandler - Invalid EmployeeId : 64
 2023-04-24 16:34:15.436 [https-jsse-nio-7500-exec-8] INFO  c.h.c.e.c.EmployeeController - getByEmployeeId : 2 called
 2023-04-24 16:34:35.516 [https-jsse-nio-7500-exec-9] INFO  c.h.c.e.c.EmployeeController - getByEmployeeId : 5 called
+2023-04-24 17:58:19.483 [RMI TCP Connection(126)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-04-24 17:58:20.835 [RMI TCP Connection(126)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-04-24 17:58:21.088 [RMI TCP Connection(126)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-24 17:58:21.822 [RMI TCP Connection(126)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-24 17:58:22.181 [RMI TCP Connection(126)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-04-24 17:58:22.289 [RMI TCP Connection(126)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
