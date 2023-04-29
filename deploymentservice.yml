@@ -30,15 +30,3 @@ spec:
             - name: DB_PASSWORD # Setting Database password from Secret
               value: root
 
-apiVersion: v1 # Kubernetes API version
-kind: Service # Kubernetes resource kind we are creating
-metadata: # Metadata of the resource kind we are creating
-  name: employee-management-system-service
-spec:
-  selector:
-    app: employee-management-system
-  ports:
-    - protocol: "TCP"
-      port: 7500 # The port that the service is running on in the cluster
-      targetPort: 7500 # The port exposed by the service
-  type: LoadBalancer # type of the service.
