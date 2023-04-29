@@ -31,8 +31,8 @@ spec:
               value: root
 
 apiVersion: v1 # Kubernetes API version
-kind: Service # Kubernetes resource kind we are creating
-metadata: # Metadata of the resource kind we are creating
+kind: Service 
+metadata: 
   name: employee-management-system-service
 spec:
   selector:
