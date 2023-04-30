@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-webservice-deployment
+spec:
+  selector:
+    matchLabels:
+      app: employee-webservice
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: employee-webservice
+    spec:
+      containers:
+        - name: employee-webservice-container
+          image: bharath210/employee-management-system:latest
+          ports:
+            - containerPort: 7500
+          env:   
+            - name: DB_HOST  
+              value: mysql
+
+            - name: DB_NAME  
+              value: hdfc
+
+            - name: DB_USERNAME  
+              value: root
+
+            - name: DB_PASSWORD 
+              value: root
