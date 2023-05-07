@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: employee-webservice-container
-          image: bharath210/employee-ws:tagVersion
+          image: bharath210/employee-ws:34
           ports:
             - containerPort: 7500
           env:   # Setting Enviornmental Variables
